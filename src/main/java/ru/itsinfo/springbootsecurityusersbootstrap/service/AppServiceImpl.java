@@ -24,8 +24,11 @@ import java.util.List;
 
 @Service
 public class AppServiceImpl implements AppService {
+
     private final UserRepository userRepository;
+
     private final RoleRepository roleRepository;
+
     private final PasswordEncoder passwordEncoder;
 
     @Autowired
@@ -141,7 +144,6 @@ public class AppServiceImpl implements AppService {
                 newBindingResult.addError(error);
             }
         }
-
         return newBindingResult;
     }
 

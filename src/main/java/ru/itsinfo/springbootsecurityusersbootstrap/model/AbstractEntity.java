@@ -7,8 +7,9 @@ import javax.persistence.*;
 
 @MappedSuperclass
 public abstract class AbstractEntity<PK extends Number> implements Persistable<PK> {
+
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private PK id;
 
     @Nullable

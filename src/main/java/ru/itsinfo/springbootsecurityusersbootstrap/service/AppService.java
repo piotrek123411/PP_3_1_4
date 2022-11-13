@@ -12,6 +12,7 @@ import javax.servlet.http.HttpSession;
 import java.util.List;
 
 public interface AppService extends UserDetailsService {
+
     List<User> findAllUsers();
 
     User findUser(Long userId) throws IllegalArgumentException;

@@ -12,6 +12,7 @@ import java.util.List;
 @Entity
 @Table(name = "roles")
 public final class Role extends AbstractEntity<Integer> implements GrantedAuthority {
+
     private static final long serialVersionUID = 7217778059836250424L;
 
     @Column(unique = true)

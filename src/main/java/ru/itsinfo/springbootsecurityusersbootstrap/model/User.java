@@ -14,6 +14,7 @@ import java.util.*;
 @Entity
 @Table(name = "users", indexes = {@Index(columnList = "name, last_name ASC")})
 public final class User extends AbstractEntity<Long> implements UserDetails {
+
     private static final long serialVersionUID = 2715270014679085151L;
 
     @Column(name = "name")
